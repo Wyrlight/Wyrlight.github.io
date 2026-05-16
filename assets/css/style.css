@@ -58,19 +58,24 @@ main {
   margin-bottom: 45px;
 }
 
-/* GALLERY */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 32px;
-  padding: 30px;
+/* GALLERY WRAPPER */
+.gallery-container {
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 30px 20px 60px 20px;
 }
 
-.gallery img {
+/* GALLERY GRID — desktop 4×2 */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.gallery-grid img {
   width: 100%;
   height: auto;
+  display: block;
   border-radius: 0;
 }
 
@@ -131,9 +136,7 @@ footer {
   color: #666;
 }
 
-/* ------------------------------------------------ */
-/* ---------------- MOBILE VIEW ------------------- */
-/* ------------------------------------------------ */
+/* ---------------- MOBILE VIEW ---------------- */
 
 @media (max-width: 768px) {
 
@@ -152,18 +155,20 @@ footer {
   }
 
   /* GALLERY — 1 column, breathing room */
-  .gallery {
+  .gallery-container {
+    padding: 20px 10px 50px 10px;
+  }
+
+  .gallery-grid {
     grid-template-columns: 1fr;
-    gap: 22px;
-    padding: 15px;
+    gap: 18px;
   }
 
-  .gallery img {
-    width: calc(100% - 20px); /* 10px hingamisruumi mõlemal serval */
-    margin: 0 auto;
+  .gallery-grid img {
+    width: 100%;
   }
 
-  /* FOOTER — bigger links, easier to tap */
+  /* FOOTER — bigger links */
   .footer-links a {
     display: inline-block;
     margin: 8px 12px;

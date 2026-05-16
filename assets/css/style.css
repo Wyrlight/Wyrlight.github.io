@@ -58,7 +58,7 @@ main {
   margin-bottom: 45px;
 }
 
-/* GALLERY GRID */
+/* GALLERY */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -71,7 +71,7 @@ main {
 .gallery img {
   width: 100%;
   height: auto;
-  border-radius: 0px; /* kandilised servad */
+  border-radius: 0;
 }
 
 /* PORTFOLIO BUTTON */
@@ -131,16 +131,27 @@ footer {
   color: #666;
 }
 
-/* MOBILE OPTIMIZATION */
+/* ------------------------------------------------ */
+/* ---------------- MOBILE VIEW ------------------- */
+/* ------------------------------------------------ */
+
 @media (max-width: 768px) {
 
+  /* NAV — bigger tap targets */
   nav a {
     display: inline-block;
-    margin: 8px 12px;
+    margin: 10px 14px;
     font-size: 21px;
     padding: 6px 0;
   }
 
+  /* HERO — slightly smaller */
+  .hero img {
+    max-width: 90%;
+    margin-bottom: 35px;
+  }
+
+  /* GALLERY — 1 column, breathing room */
   .gallery {
     grid-template-columns: 1fr;
     gap: 22px;
@@ -148,19 +159,19 @@ footer {
   }
 
   .gallery img {
-    width: calc(100% - 20px);
+    width: calc(100% - 20px); /* 10px hingamisruumi mõlemal serval */
     margin: 0 auto;
   }
 
+  /* FOOTER — bigger links, easier to tap */
   .footer-links a {
     display: inline-block;
-    margin: 6px 12px;
+    margin: 8px 12px;
     font-size: 19px;
+    padding: 6px 0;
   }
 
-  .hero img {
-    max-width: 90%;
-    margin-bottom: 35px;
+  footer {
+    padding-bottom: 70px;
   }
 }
-

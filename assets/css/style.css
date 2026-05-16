@@ -15,20 +15,21 @@ body {
 
 /* HEADER */
 header {
-  padding: 30px 0 20px 0;
+  padding: 35px 0 25px 0;
 }
 
 .logo img {
-  width: 120px;
+  width: 130px;
   height: auto;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 nav a {
-  margin: 0 14px;
+  margin: 0 16px;
   text-decoration: none;
   color: #333;
-  font-weight: 500;
+  font-size: 19px;
+  font-weight: 600;
 }
 
 nav a:hover {
@@ -39,30 +40,29 @@ nav a:hover {
 .separator {
   border: none;
   border-top: 1px solid #ccc;
-  margin: 25px auto;
+  margin: 28px auto;
   width: 90%;
 }
 
 /* HERO */
 .hero img {
   width: 100%;
-  max-width: 700px;
+  max-width: 620px;
   height: auto;
   display: block;
-  margin: 0 auto 40px auto;
-  border-radius: 4px;
+  margin: 0 auto 45px auto;
 }
 
 /* MAIN SPACING */
 main {
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 
 /* GALLERY GRID */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
+  gap: 32px;
   padding: 30px;
   max-width: 1200px;
   margin: auto;
@@ -71,22 +71,23 @@ main {
 .gallery img {
   width: 100%;
   height: auto;
-  border-radius: 4px;
+  border-radius: 0px; /* kandilised servad */
 }
 
 /* PORTFOLIO BUTTON */
 .portfolio-button {
-  margin: 40px 0 20px 0;
+  margin: 45px 0 25px 0;
 }
 
 .portfolio-button a {
   display: inline-block;
-  padding: 14px 28px;
+  padding: 15px 30px;
   background: #1F3A52;
   color: white;
   text-decoration: none;
   border-radius: 4px;
-  font-size: 17px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .portfolio-button a:hover {
@@ -96,21 +97,28 @@ main {
 /* INFO PAGE */
 .info {
   max-width: 800px;
-  margin: 30px auto;
+  margin: 35px auto;
   padding: 0 20px;
-  font-size: 18px;
+  font-size: 19px;
 }
 
 /* FOOTER */
 footer {
-  padding: 30px 0 50px 0;
+  padding: 35px 0 55px 0;
+}
+
+.footer-links {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 2.2;
 }
 
 .footer-links a {
-  margin: 0 8px;
+  margin: 0 10px;
   text-decoration: none;
   color: #333;
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .footer-links a:hover {
@@ -118,7 +126,40 @@ footer {
 }
 
 .copyright {
-  margin-top: 12px;
-  font-size: 14px;
+  margin-top: 14px;
+  font-size: 15px;
   color: #666;
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+
+  nav a {
+    display: inline-block;
+    margin: 8px 12px;
+    font-size: 21px;
+    padding: 6px 0;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 15px;
+  }
+
+  .gallery img {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+  }
+
+  .footer-links a {
+    display: inline-block;
+    margin: 6px 12px;
+    font-size: 19px;
+  }
+
+  .hero img {
+    max-width: 90%;
+    margin-bottom: 35px;
+  }
 }

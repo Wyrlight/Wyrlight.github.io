@@ -12,9 +12,10 @@ html, body {
     line-height: 1.6;
 }
 
-/* SEPARATOR LINES */
+/* FULL-WIDTH SEPARATORS */
 .full-separator {
-    width: 100%;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
     border: none;
     border-top: 1px solid #1c1c1c;
 }
@@ -73,10 +74,10 @@ main {
     font-weight: 600;
 }
 
-/* HERO IMAGE */
+/* HERO IMAGE — DESKTOP 320px */
 .hero img {
     width: 100%;
-    max-width: 400px; /* desktop: väiksem, minimalistlik */
+    max-width: 320px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -171,20 +172,20 @@ footer {
     /* NAV — ÜHES REAS MOBIILIS */
     header nav {
         flex-wrap: nowrap;
-        gap: 10px;
         justify-content: center;
+        gap: 8px;
     }
 
     header nav a {
-        font-size: 16px;
-        margin: 0 4px;
+        font-size: 15px;
+        margin: 0 2px;
         white-space: nowrap;
     }
 
     /* FOOTER NAV — KA ÜHES REAS */
     .footer-nav-block a {
-        font-size: 16px;
-        margin: 0 4px;
+        font-size: 15px;
+        margin: 0 2px;
         white-space: nowrap;
     }
 
@@ -193,9 +194,11 @@ footer {
         padding: 30px 20px;
     }
 
+    /* SMALLER MOBILE H1 */
     .home-title {
-        font-size: 24px;
-        padding-top: 20px;
+        font-size: 20px;
+        line-height: 1.25;
+        padding-top: 10px;
     }
 
     /* GALLERY — 1 PILT REAS */

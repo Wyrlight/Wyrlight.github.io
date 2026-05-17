@@ -12,7 +12,7 @@ html, body {
     line-height: 1.6;
 }
 
-/* SEPARATOR LINES — 3 TK, SERVAST SERVA */
+/* SEPARATOR LINES */
 .full-separator {
     width: 100%;
     border: none;
@@ -33,7 +33,7 @@ header {
 
 .header-inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* desktop: nav paremal */
     align-items: center;
     padding: 28px 0;
 }
@@ -41,11 +41,11 @@ header {
 /* LOGO */
 .logo img {
     height: 48px;
-    margin-left: 48px; /* hingamisruum */
+    margin-left: 48px;
     display: block;
 }
 
-/* NAVIGATION — ÜHES REAS KA MOBIILIS */
+/* NAVIGATION */
 header nav {
     display: flex;
     align-items: center;
@@ -57,7 +57,7 @@ header nav a {
     color: #1c1c1c;
     font-weight: 600;
     font-size: 18px;
-    white-space: nowrap; /* ei murdu */
+    white-space: nowrap;
 }
 
 /* MAIN */
@@ -76,7 +76,8 @@ main {
 /* HERO IMAGE */
 .hero img {
     width: 100%;
-    max-width: 900px;
+    max-width: 400px; /* desktop: väiksem, minimalistlik */
+    height: auto;
     display: block;
     margin: 0 auto;
 }
@@ -167,12 +168,24 @@ footer {
         height: 42px;
     }
 
+    /* NAV — ÜHES REAS MOBIILIS */
     header nav {
-        gap: 16px;
+        flex-wrap: nowrap;
+        gap: 10px;
+        justify-content: center;
     }
 
     header nav a {
-        font-size: 18px;
+        font-size: 16px;
+        margin: 0 4px;
+        white-space: nowrap;
+    }
+
+    /* FOOTER NAV — KA ÜHES REAS */
+    .footer-nav-block a {
+        font-size: 16px;
+        margin: 0 4px;
+        white-space: nowrap;
     }
 
     /* MAIN */
@@ -181,7 +194,7 @@ footer {
     }
 
     .home-title {
-        font-size: 24px; /* 25% väiksem */
+        font-size: 24px;
         padding-top: 20px;
     }
 

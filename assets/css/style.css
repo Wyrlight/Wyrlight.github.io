@@ -15,8 +15,8 @@ html, body {
 /* KESKNE TAHVEL – FIKSEERITUD LAIUS DESKTOPIL */
 .page-wrapper {
     width: 100%;
-    max-width: 960px; /* see määrab kogu layouti laiuse desktopil */
-    margin: 0 auto;   /* alati keskel, sõltumata ekraani suurusest */
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 /* HEADER */
@@ -27,7 +27,7 @@ header {
 
 .header-inner {
     display: flex;
-    justify-content: space-between; /* logo vasakul, nav paremal */
+    justify-content: space-between;
     align-items: center;
     padding: 24px 0;
 }
@@ -74,19 +74,41 @@ main {
 
 .hero img {
     width: 100%;
-    max-width: 280px; /* fikseeritud visuaalne suurus desktopil */
+    max-width: 280px;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-/* INTRO / ABOUT TEKST */
+/* INTRO */
 .intro {
     text-align: center;
     padding: 8px 20px 12px 20px;
     font-size: 18px;
     max-width: 720px;
     margin: 0 auto;
+}
+
+/* ABOUT (INFO PAGE) */
+.info-wrapper {
+    max-width: 620px;
+    margin: 60px auto 80px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.info-title {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.info-text {
+    font-size: 18px;
+    font-weight: 400; /* Sinu valik */
+    line-height: 1.65;
+    max-width: 620px;
+    margin: 0 auto 45px auto;
 }
 
 /* PORTFOLIO BLOCK */
@@ -103,17 +125,12 @@ main {
     text-decoration: none;
     font-weight: 600;
     font-size: 18px;
-
-    /* ÕIGE KUJU — KAPSLI KUJULINE */
     border-radius: 999px;
-
-    /* Ühtlane kõrgus ja keskjoondus */
     line-height: 1;
     height: 48px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     transition: opacity 0.2s ease;
 }
 
@@ -121,7 +138,7 @@ main {
     opacity: 0.85;
 }
 
-/* GALLERY GRID (VECTOR / GRAPHIC LEHTEDEL) */
+/* GALLERY GRID */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -179,13 +196,11 @@ footer {
 /* --- MOBIIL / VÄIKSEMAD EKRAANID --- */
 @media (max-width: 768px) {
 
-    /* TAHVEL LÄHEB 100% LAIUSEKS, SÄILITAB SAMA STRUKTUURI */
     .page-wrapper {
         max-width: 100%;
         padding: 0 16px;
     }
 
-    /* HEADER STACK */
     .header-inner {
         flex-direction: column;
         gap: 10px;
@@ -196,7 +211,6 @@ footer {
         height: 44px;
     }
 
-    /* NAV ÜHES REAS */
     header nav {
         justify-content: center;
         gap: 8px;
@@ -209,20 +223,16 @@ footer {
         white-space: nowrap;
     }
 
-    /* MAIN PADDING */
     main {
         padding: 20px 0 28px 0;
     }
 
-    /* H1 VÄIKSEM */
-   .home-title {
-    font-size: 16px;   /* ainult see muutub */
-    line-height: 1.2;  /* ja see */
-    padding: 10px 8px 6px 8px; /* jääb alles */
+    .home-title {
+        font-size: 16px;
+        line-height: 1.2;
+        padding: 10px 8px 6px 8px;
     }
 
-
-    /* HERO VEIDI VÄIKSEM */
     .hero {
         margin: 8px 0 14px 0;
     }
@@ -231,13 +241,11 @@ footer {
         max-width: 240px;
     }
 
-    /* INTRO / ABOUT VÄIKSEM */
     .intro {
         font-size: 15px;
         padding: 6px 4px 8px 4px;
     }
 
-    /* PORTFOLIO NUPP */
     .portfolio-block {
         margin: 16px 0 22px 0;
     }
@@ -247,28 +255,49 @@ footer {
         padding: 10px 22px;
     }
 
-    /* GALLERY GRID — 1 PILT REAS */
     .gallery-grid {
         grid-template-columns: 1fr;
         gap: 16px;
         padding: 12px 0 28px 0;
     }
 
-    /* FOOTER — SUUREMAD RIDADE VAHED (SINU SOOVITUD PARANDUS) */
-    .footer-nav-block {
-        padding-bottom: 8px;
-        margin-bottom: 8px;
-        line-height: 1.9;
+    /* ABOUT MOBILE */
+    .info-wrapper {
+        max-width: 100%;
+        margin: 40px auto 60px auto;
+        padding: 0 16px;
     }
 
+    .info-title {
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+
+    .info-text {
+        font-size: 15px;
+        line-height: 1.45;
+        margin-bottom: 40px;
+    }
+
+    /* FOOTER MOBILE — 3 RIDA */
     .footer-social {
+        margin-top: 6px;
+        line-height: 1.4;
         font-size: 13px;
-        margin-top: 14px;
-        line-height: 1.9;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px 10px;
+    }
+
+    .footer-social a[href^="mailto"] {
+        flex-basis: 100%;
+        text-align: center;
+        margin-top: 4px;
     }
 
     .footer-copy {
+        margin-top: 10px;
         font-size: 12px;
-        margin-top: 14px;
     }
 }

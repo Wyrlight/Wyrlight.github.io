@@ -12,18 +12,11 @@ html, body {
     line-height: 1.6;
 }
 
-/* FULL-WIDTH SEPARATORS (KUI KASUTAD <hr class="full-separator">) */
-.full-separator {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    border: none;
-    border-top: 1px solid #1c1c1c;
-}
-
-/* WRAPPER */
+/* KESKNE TAHVEL – FIKSEERITUD LAIUS DESKTOPIL */
 .page-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 960px; /* see määrab kogu layouti laiuse desktopil */
+    margin: 0 auto;   /* alati keskel, sõltumata ekraani suurusest */
 }
 
 /* HEADER */
@@ -34,7 +27,7 @@ header {
 
 .header-inner {
     display: flex;
-    justify-content: space-between; /* desktop: logo vasakul, nav paremal */
+    justify-content: space-between; /* logo vasakul, nav paremal */
     align-items: center;
     padding: 24px 0;
 }
@@ -42,7 +35,6 @@ header {
 /* LOGO */
 .logo img {
     height: 48px;
-    margin-left: 48px;
     display: block;
 }
 
@@ -50,8 +42,7 @@ header {
 header nav {
     display: flex;
     align-items: center;
-    gap: 32px;
-    margin-right: 48px;
+    gap: 28px;
 }
 
 header nav a {
@@ -64,13 +55,13 @@ header nav a {
 
 /* MAIN */
 main {
-    padding: 40px 48px 60px 48px;
+    padding: 32px 0 48px 0;
 }
 
 /* HOME TITLE (H1) */
 .home-title {
     text-align: center;
-    padding: 24px 20px 12px 20px;
+    padding: 12px 20px;
     font-size: 30px;
     font-weight: 600;
 }
@@ -78,12 +69,12 @@ main {
 /* HERO (SAILBOAT) */
 .hero {
     text-align: center;
-    margin: 12px 0 24px 0;
+    margin: 12px 0 20px 0;
 }
 
 .hero img {
     width: 100%;
-    max-width: 280px; /* kompaktne ka desktopil */
+    max-width: 280px; /* fikseeritud visuaalne suurus desktopil */
     height: auto;
     display: block;
     margin: 0 auto;
@@ -92,7 +83,7 @@ main {
 /* INTRO / ABOUT TEKST */
 .intro {
     text-align: center;
-    padding: 8px 20px 16px 20px;
+    padding: 8px 20px 12px 20px;
     font-size: 18px;
     max-width: 720px;
     margin: 0 auto;
@@ -101,7 +92,7 @@ main {
 /* PORTFOLIO BLOCK */
 .portfolio-block {
     text-align: center;
-    margin: 24px 0 40px 0;
+    margin: 20px 0 32px 0;
 }
 
 .portfolio-button {
@@ -125,7 +116,7 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
-    padding: 20px 48px 60px 48px;
+    padding: 16px 0 40px 0;
 }
 
 .gallery-grid img {
@@ -137,20 +128,20 @@ main {
 
 /* FOOTER */
 footer {
-    margin-top: 40px;
-    padding: 32px 0 24px 0;
+    margin-top: 32px;
+    padding: 24px 0 18px 0;
     border-top: 1px solid #1c1c1c;
     text-align: center;
 }
 
 .footer-nav-block {
     border-bottom: 1px solid #1c1c1c;
-    padding-bottom: 16px;
-    margin: 0 20px 16px 20px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
 }
 
 .footer-nav-block a {
-    margin: 0 12px;
+    margin: 0 10px;
     text-decoration: none;
     color: #1c1c1c;
     font-weight: 600;
@@ -159,7 +150,7 @@ footer {
 }
 
 .footer-social {
-    margin-top: 10px;
+    margin-top: 8px;
     font-size: 14px;
 }
 
@@ -171,28 +162,32 @@ footer {
 }
 
 .footer-copy {
-    margin-top: 6px;
+    margin-top: 4px;
     font-size: 13px;
 }
 
-/* MOBILE */
+/* --- MOBIIL / VÄIKSEMAD EKRAANID --- */
 @media (max-width: 768px) {
+
+    /* TAHVEL LÄHEB 100% LAIUSEKS, SÄILITAB SAMA STRUKTUURI */
+    .page-wrapper {
+        max-width: 100%;
+        padding: 0 16px;
+    }
 
     /* HEADER STACK */
     .header-inner {
         flex-direction: column;
         gap: 10px;
-        padding: 16px 0 12px 0;
+        padding: 16px 0 10px 0;
     }
 
     .logo img {
-        margin-left: 0;
         height: 44px;
     }
 
     /* NAV ÜHES REAS */
     header nav {
-        margin-right: 0;
         justify-content: center;
         gap: 8px;
         flex-wrap: nowrap;
@@ -206,34 +201,34 @@ footer {
 
     /* MAIN PADDING */
     main {
-        padding: 20px 18px 32px 18px;
+        padding: 20px 0 28px 0;
     }
 
     /* H1 VÄIKSEM */
     .home-title {
         font-size: 20px;
         line-height: 1.25;
-        padding: 12px 10px 6px 10px;
+        padding: 10px 8px 6px 8px;
     }
 
-    /* HERO KOMPAKTNE */
+    /* HERO VEIDI VÄIKSEM */
     .hero {
-        margin: 8px 0 16px 0;
+        margin: 8px 0 14px 0;
     }
 
     .hero img {
-        max-width: 260px;
+        max-width: 240px;
     }
 
     /* INTRO / ABOUT VÄIKSEM */
     .intro {
         font-size: 15px;
-        padding: 6px 4px 10px 4px;
+        padding: 6px 4px 8px 4px;
     }
 
     /* PORTFOLIO NUPP */
     .portfolio-block {
-        margin: 18px 0 26px 0;
+        margin: 16px 0 22px 0;
     }
 
     .portfolio-button {
@@ -244,19 +239,19 @@ footer {
     /* GALLERY GRID — 1 PILT REAS */
     .gallery-grid {
         grid-template-columns: 1fr;
-        padding: 16px 12px 32px 12px;
         gap: 16px;
+        padding: 12px 0 28px 0;
     }
 
     /* FOOTER KOMPAKTNE */
     footer {
-        padding: 20px 0 18px 0;
-        margin-top: 24px;
+        padding: 18px 0 14px 0;
+        margin-top: 20px;
     }
 
     .footer-nav-block {
-        padding-bottom: 10px;
-        margin: 0 10px 10px 10px;
+        padding-bottom: 8px;
+        margin-bottom: 8px;
     }
 
     .footer-nav-block a {
@@ -266,11 +261,11 @@ footer {
 
     .footer-social {
         font-size: 13px;
-        margin-top: 6px;
+        margin-top: 4px;
     }
 
     .footer-copy {
         font-size: 12px;
-        margin-top: 4px;
+        margin-top: 3px;
     }
 }

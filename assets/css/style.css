@@ -215,11 +215,12 @@ footer {
     }
 
     /* H1 VÄIKSEM */
-    .home-title {
-        font-size: 20px;
-        line-height: 1.25;
-        padding: 10px 8px 6px 8px;
+   .home-title {
+    font-size: 16px;   /* ainult see muutub */
+    line-height: 1.2;  /* ja see */
+    padding: 10px 8px 6px 8px; /* jääb alles */
     }
+
 
     /* HERO VEIDI VÄIKSEM */
     .hero {

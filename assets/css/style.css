@@ -12,7 +12,7 @@ html, body {
     line-height: 1.6;
 }
 
-/* FULL-WIDTH SEPARATORS */
+/* FULL-WIDTH SEPARATORS (KUI KASUTAD <hr class="full-separator">) */
 .full-separator {
     width: 100vw;
     margin-left: calc(50% - 50vw);
@@ -34,9 +34,9 @@ header {
 
 .header-inner {
     display: flex;
-    justify-content: space-between; /* desktop: nav paremal */
+    justify-content: space-between; /* desktop: logo vasakul, nav paremal */
     align-items: center;
-    padding: 28px 0;
+    padding: 24px 0;
 }
 
 /* LOGO */
@@ -51,6 +51,7 @@ header nav {
     display: flex;
     align-items: center;
     gap: 32px;
+    margin-right: 48px;
 }
 
 header nav a {
@@ -63,34 +64,63 @@ header nav a {
 
 /* MAIN */
 main {
-    padding: 40px 48px;
+    padding: 40px 48px 60px 48px;
 }
 
-/* HOME TITLE */
+/* HOME TITLE (H1) */
 .home-title {
     text-align: center;
-    padding: 40px 20px 20px 20px;
-    font-size: 32px;
+    padding: 24px 20px 12px 20px;
+    font-size: 30px;
     font-weight: 600;
 }
 
-/* HERO IMAGE — DESKTOP 320px */
+/* HERO (SAILBOAT) */
+.hero {
+    text-align: center;
+    margin: 12px 0 24px 0;
+}
+
 .hero img {
     width: 100%;
-    max-width: 320px;
+    max-width: 280px; /* kompaktne ka desktopil */
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-/* INTRO TEXT */
+/* INTRO / ABOUT TEKST */
 .intro {
     text-align: center;
-    padding: 20px;
+    padding: 8px 20px 16px 20px;
     font-size: 18px;
+    max-width: 720px;
+    margin: 0 auto;
 }
 
-/* GALLERY — DESKTOP 4 PILTI REAS */
+/* PORTFOLIO BLOCK */
+.portfolio-block {
+    text-align: center;
+    margin: 24px 0 40px 0;
+}
+
+.portfolio-button {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #2A4960;
+    color: #FAFAFA;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 12px;
+    font-size: 17px;
+    transition: opacity 0.2s ease;
+}
+
+.portfolio-button:hover {
+    opacity: 0.85;
+}
+
+/* GALLERY GRID (VECTOR / GRAPHIC LEHTEDEL) */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -105,44 +135,22 @@ main {
     display: block;
 }
 
-/* PORTFOLIO BUTTON — LUKUSTATUD */
-.portfolio-button {
-    display: inline-block;
-    padding: 14px 32px;
-    background: #2A4960;
-    color: #FAFAFA;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 12px;
-    font-size: 18px;
-    transition: opacity 0.2s ease;
-}
-
-.portfolio-button:hover {
-    opacity: 0.8;
-}
-
-.portfolio-block {
-    text-align: center;
-    margin: 40px 0 60px 0;
-}
-
 /* FOOTER */
 footer {
-    margin-top: 60px;
-    padding: 40px 0;
+    margin-top: 40px;
+    padding: 32px 0 24px 0;
     border-top: 1px solid #1c1c1c;
     text-align: center;
 }
 
 .footer-nav-block {
     border-bottom: 1px solid #1c1c1c;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    padding-bottom: 16px;
+    margin: 0 20px 16px 20px;
 }
 
 .footer-nav-block a {
-    margin: 0 16px;
+    margin: 0 12px;
     text-decoration: none;
     color: #1c1c1c;
     font-weight: 600;
@@ -151,60 +159,118 @@ footer {
 }
 
 .footer-social {
-    margin-top: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: #1c1c1c;
+    margin: 0 6px;
+    white-space: nowrap;
+}
+
+.footer-copy {
+    margin-top: 6px;
+    font-size: 13px;
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
 
-    /* HEADER */
+    /* HEADER STACK */
     .header-inner {
         flex-direction: column;
-        gap: 16px;
-        padding: 20px 0;
+        gap: 10px;
+        padding: 16px 0 12px 0;
     }
 
     .logo img {
         margin-left: 0;
-        height: 42px;
+        height: 44px;
     }
 
-    /* NAV — ÜHES REAS MOBIILIS */
+    /* NAV ÜHES REAS */
     header nav {
-        flex-wrap: nowrap;
+        margin-right: 0;
         justify-content: center;
         gap: 8px;
+        flex-wrap: nowrap;
     }
 
     header nav a {
-        font-size: 15px;
+        font-size: 14px;
         margin: 0 2px;
         white-space: nowrap;
     }
 
-    /* FOOTER NAV — KA ÜHES REAS */
-    .footer-nav-block a {
-        font-size: 15px;
-        margin: 0 2px;
-        white-space: nowrap;
-    }
-
-    /* MAIN */
+    /* MAIN PADDING */
     main {
-        padding: 30px 20px;
+        padding: 20px 18px 32px 18px;
     }
 
-    /* SMALLER MOBILE H1 */
+    /* H1 VÄIKSEM */
     .home-title {
         font-size: 20px;
         line-height: 1.25;
-        padding-top: 10px;
+        padding: 12px 10px 6px 10px;
     }
 
-    /* GALLERY — 1 PILT REAS */
+    /* HERO KOMPAKTNE */
+    .hero {
+        margin: 8px 0 16px 0;
+    }
+
+    .hero img {
+        max-width: 260px;
+    }
+
+    /* INTRO / ABOUT VÄIKSEM */
+    .intro {
+        font-size: 15px;
+        padding: 6px 4px 10px 4px;
+    }
+
+    /* PORTFOLIO NUPP */
+    .portfolio-block {
+        margin: 18px 0 26px 0;
+    }
+
+    .portfolio-button {
+        font-size: 15px;
+        padding: 10px 22px;
+    }
+
+    /* GALLERY GRID — 1 PILT REAS */
     .gallery-grid {
         grid-template-columns: 1fr;
-        padding: 20px;
-        gap: 18px;
+        padding: 16px 12px 32px 12px;
+        gap: 16px;
+    }
+
+    /* FOOTER KOMPAKTNE */
+    footer {
+        padding: 20px 0 18px 0;
+        margin-top: 24px;
+    }
+
+    .footer-nav-block {
+        padding-bottom: 10px;
+        margin: 0 10px 10px 10px;
+    }
+
+    .footer-nav-block a {
+        font-size: 14px;
+        margin: 0 4px;
+    }
+
+    .footer-social {
+        font-size: 13px;
+        margin-top: 6px;
+    }
+
+    .footer-copy {
+        font-size: 12px;
+        margin-top: 4px;
     }
 }

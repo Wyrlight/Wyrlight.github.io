@@ -121,7 +121,6 @@ main {
     opacity: 0.85;
 }
 
-
 /* GALLERY GRID (VECTOR / GRAPHIC LEHTEDEL) */
 .gallery-grid {
     display: grid;
@@ -254,29 +253,21 @@ footer {
         padding: 12px 0 28px 0;
     }
 
-    /* FOOTER KOMPAKTNE */
-    footer {
-        padding: 18px 0 14px 0;
-        margin-top: 20px;
-    }
-
+    /* FOOTER — SUUREMAD RIDADE VAHED (SINU SOOVITUD PARANDUS) */
     .footer-nav-block {
         padding-bottom: 8px;
         margin-bottom: 8px;
-    }
-
-    .footer-nav-block a {
-        font-size: 14px;
-        margin: 0 4px;
+        line-height: 1.9;
     }
 
     .footer-social {
         font-size: 13px;
-        margin-top: 4px;
+        margin-top: 14px;
+        line-height: 1.9;
     }
 
     .footer-copy {
         font-size: 12px;
-        margin-top: 3px;
+        margin-top: 14px;
     }
 }

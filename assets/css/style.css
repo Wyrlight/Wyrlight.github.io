@@ -12,12 +12,15 @@ html, body {
     line-height: 1.6;
 }
 
-/* FULL WIDTH SEPARATORS */
+/* FULL WIDTH SEPARATOR */
 .full-separator {
     border: none;
     border-top: 1px solid #2A4960;
-    width: 100%;
-    margin: 0;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* KESKNE TAHVEL */
@@ -72,7 +75,6 @@ main {
     padding: 20px 20px 10px 20px;
     font-size: 30px;
     font-weight: 600;
-    color: #2A4960;
 }
 
 /* HERO */
@@ -95,7 +97,6 @@ main {
     padding: 8px 20px 12px 20px;
     font-size: 18px;
     font-weight: 600;
-    color: #2A4960;
     max-width: 720px;
     margin: 0 auto;
 }
@@ -111,14 +112,12 @@ main {
 .info-title {
     font-size: 26px;
     font-weight: 600;
-    color: #2A4960;
     margin-bottom: 24px;
 }
 
 .info-text {
     font-size: 18px;
     font-weight: 600;
-    color: #2A4960;
     line-height: 1.65;
     max-width: 620px;
     margin: 0 auto 45px auto;
@@ -204,7 +203,6 @@ footer {
 .footer-copy {
     margin-top: 4px;
     font-size: 13px;
-    color: #2A4960;
 }
 
 /* MOBILE */
@@ -240,6 +238,7 @@ footer {
         padding: 20px 0 28px 0;
     }
 
+    /* ~30% väiksem HOME H1 */
     .home-title {
         font-size: 20px;
         line-height: 1.25;

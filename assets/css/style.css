@@ -6,13 +6,21 @@
 }
 
 html, body {
-    background: #FAFAFA;
-    color: #1c1c1c;
+    background: #FFFFFF;
+    color: #2A4960;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
 }
 
-/* KESKNE TAHVEL – FIKSEERITUD LAIUS DESKTOPIL */
+/* FULL WIDTH SEPARATORS */
+.full-separator {
+    border: none;
+    border-top: 1px solid #2A4960;
+    width: 100%;
+    margin: 0;
+}
+
+/* KESKNE TAHVEL */
 .page-wrapper {
     width: 100%;
     max-width: 960px;
@@ -22,7 +30,7 @@ html, body {
 /* HEADER */
 header {
     width: 100%;
-    background: #FAFAFA;
+    background: #FFFFFF;
 }
 
 .header-inner {
@@ -34,7 +42,7 @@ header {
 
 /* LOGO */
 .logo img {
-    height: 48px;
+    height: 90px;
     display: block;
 }
 
@@ -47,7 +55,7 @@ header nav {
 
 header nav a {
     text-decoration: none;
-    color: #1c1c1c;
+    color: #2A4960;
     font-weight: 600;
     font-size: 18px;
     white-space: nowrap;
@@ -58,15 +66,16 @@ main {
     padding: 32px 0 48px 0;
 }
 
-/* HOME TITLE (H1) */
+/* HOME TITLE */
 .home-title {
     text-align: center;
-    padding: 12px 20px;
+    padding: 20px 20px 10px 20px;
     font-size: 30px;
     font-weight: 600;
+    color: #2A4960;
 }
 
-/* HERO (SAILBOAT) */
+/* HERO */
 .hero {
     text-align: center;
     margin: 12px 0 20px 0;
@@ -85,11 +94,13 @@ main {
     text-align: center;
     padding: 8px 20px 12px 20px;
     font-size: 18px;
+    font-weight: 600;
+    color: #2A4960;
     max-width: 720px;
     margin: 0 auto;
 }
 
-/* ABOUT (INFO PAGE) */
+/* INFO PAGE */
 .info-wrapper {
     max-width: 620px;
     margin: 60px auto 80px auto;
@@ -100,37 +111,38 @@ main {
 .info-title {
     font-size: 26px;
     font-weight: 600;
+    color: #2A4960;
     margin-bottom: 24px;
 }
 
 .info-text {
     font-size: 18px;
-    font-weight: 400; /* Sinu valik */
+    font-weight: 600;
+    color: #2A4960;
     line-height: 1.65;
     max-width: 620px;
     margin: 0 auto 45px auto;
 }
 
-/* PORTFOLIO BLOCK */
+/* PORTFOLIO */
 .portfolio-block {
     text-align: center;
     margin: 20px 0 32px 0;
 }
 
 .portfolio-button {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 14px 36px;
     background: #2A4960;
-    color: #FAFAFA;
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: 600;
     font-size: 18px;
     border-radius: 999px;
     line-height: 1;
     height: 48px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     transition: opacity 0.2s ease;
 }
 
@@ -138,7 +150,7 @@ main {
     opacity: 0.85;
 }
 
-/* GALLERY GRID */
+/* GALLERY */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -157,12 +169,12 @@ main {
 footer {
     margin-top: 32px;
     padding: 24px 0 18px 0;
-    border-top: 1px solid #1c1c1c;
+    border-top: 1px solid #2A4960;
     text-align: center;
 }
 
 .footer-nav-block {
-    border-bottom: 1px solid #1c1c1c;
+    border-bottom: 1px solid #2A4960;
     padding-bottom: 12px;
     margin-bottom: 12px;
 }
@@ -170,7 +182,7 @@ footer {
 .footer-nav-block a {
     margin: 0 10px;
     text-decoration: none;
-    color: #1c1c1c;
+    color: #2A4960;
     font-weight: 600;
     font-size: 16px;
     white-space: nowrap;
@@ -179,11 +191,12 @@ footer {
 .footer-social {
     margin-top: 8px;
     font-size: 14px;
+    font-weight: 600;
 }
 
 .footer-social a {
     text-decoration: none;
-    color: #1c1c1c;
+    color: #2A4960;
     margin: 0 6px;
     white-space: nowrap;
 }
@@ -191,9 +204,10 @@ footer {
 .footer-copy {
     margin-top: 4px;
     font-size: 13px;
+    color: #2A4960;
 }
 
-/* --- MOBIIL / VÄIKSEMAD EKRAANID --- */
+/* MOBILE */
 @media (max-width: 768px) {
 
     .page-wrapper {
@@ -208,7 +222,7 @@ footer {
     }
 
     .logo img {
-        height: 44px;
+        height: 70px;
     }
 
     header nav {
@@ -220,7 +234,6 @@ footer {
     header nav a {
         font-size: 14px;
         margin: 0 2px;
-        white-space: nowrap;
     }
 
     main {
@@ -228,9 +241,9 @@ footer {
     }
 
     .home-title {
-        font-size: 16px;
-        line-height: 1.2;
-        padding: 10px 8px 6px 8px;
+        font-size: 20px;
+        line-height: 1.25;
+        padding: 12px 8px 8px 8px;
     }
 
     .hero {
@@ -261,7 +274,6 @@ footer {
         padding: 12px 0 28px 0;
     }
 
-    /* ABOUT MOBILE */
     .info-wrapper {
         max-width: 100%;
         margin: 40px auto 60px auto;
@@ -279,7 +291,6 @@ footer {
         margin-bottom: 40px;
     }
 
-    /* FOOTER MOBILE — 3 RIDA */
     .footer-social {
         margin-top: 6px;
         line-height: 1.4;

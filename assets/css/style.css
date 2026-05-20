@@ -15,7 +15,7 @@ html, body {
 /* FULL WIDTH SEPARATOR */
 .full-separator {
     border: none;
-    border-top: 1px solid #2A4960;
+    border-top: 1px solid #F5F5F5;
     width: 100vw;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
@@ -174,14 +174,34 @@ main {
 footer {
     margin-top: 32px;
     padding: 24px 0 18px 0;
-    border-top: 1px solid #2A4960;
     text-align: center;
+    position: relative;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100vw;
+    margin-left: -50vw;
+    border-top: 1px solid #F5F5F5;
 }
 
 .footer-nav-block {
-    border-bottom: 1px solid #2A4960;
     padding-bottom: 12px;
     margin-bottom: 12px;
+    position: relative;
+}
+
+.footer-nav-block::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100vw;
+    margin-left: -50vw;
+    border-bottom: 1px solid #F5F5F5;
 }
 
 .footer-nav-block a {
@@ -244,7 +264,6 @@ footer {
         padding: 20px 0 28px 0;
     }
 
-    /* ~30% väiksem HOME H1 */
     .home-title {
         font-size: 20px;
         line-height: 1.25;

@@ -30,6 +30,12 @@ html, body {
     margin: 0 auto;
 }
 
+/* GALLERY CONTAINER */
+.gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 /* HEADER */
 header {
     width: 100%;

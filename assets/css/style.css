@@ -8,7 +8,7 @@
 html, body {
     background: #FFFFFF;
     color: #2A4960;
-    font-family: 'Montserrat', sans-serif;
+    font-family: system-ui, sans-serif;
     line-height: 1.6;
 }
 

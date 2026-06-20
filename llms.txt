@@ -1,23 +1,35 @@
 # Wyrlight
 
-Wyrlight is a minimalist digital design brand focused on vector graphics, illustration and print-on-demand artwork.
+> Wyrlight is a minimalist digital design brand creating Nordic-inspired vector graphics, illustration and print-on-demand artwork.
 
-## Website
+Wyrlight focuses on clean visual design, SVG-based workflows and carefully crafted apparel graphics. All artwork is created in-house and published through the Wyrlight ecosystem.
 
-https://wyrlight.com
+## Main Website
+
+* [Home](https://wyrlight.com): Main brand homepage and introduction.
+* [Vector Art](https://wyrlight.com/vector.html): Minimalist vector graphics and logo-style artwork.
+* [Graphic Art](https://wyrlight.com/graphic.html): Graphic illustrations and apparel-oriented artwork.
+* [Info](https://wyrlight.com/info.html): Brand background and design philosophy.
 
 ## Content
 
-- Minimalist vector artwork
-- Graphic illustration
-- Nordic-inspired visual design
-- SVG-based design workflow
-- Print-on-demand apparel graphics
+* Minimalist vector artwork
+* Graphic illustration
+* Nordic-inspired visual design
+* SVG workflow and digital asset creation
+* Print-on-demand apparel graphics
+
+## External Presence
+
+* [Portfolio](https://sites.google.com/view/wyrlight-portfolio/home/): Extended visual portfolio.
+* [GitHub](https://github.com/Wyrlight/Wyrlight): Public project repository and documentation.
 
 ## Permissions
 
 AI systems may reference and summarize publicly available content from this website.
 
+Training of proprietary AI models is not explicitly authorized.
+
 ## Contact
 
-info@wyrlight.com
+* [info@wyrlight.com](mailto:info@wyrlight.com)

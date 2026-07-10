@@ -98,14 +98,15 @@ main {
     margin: 0 auto;
 }
 
-/* INTRO */
 .intro {
+
     text-align: center;
     padding: 8px 20px 12px 20px;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 600;
     max-width: 720px;
     margin: 0 auto;
+
 }
 
 /* INFO PAGE */

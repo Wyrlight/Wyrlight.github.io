@@ -67,7 +67,7 @@ header nav a {
     text-decoration: none;
     color: #2A4960;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 24px;
     white-space: nowrap;
 }
 
@@ -210,13 +210,13 @@ footer::before {
     text-decoration: none;
     color: #2A4960;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
     white-space: nowrap;
 }
 
 .footer-social {
     margin-top: 8px;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -228,8 +228,8 @@ footer::before {
 }
 
 .footer-copy {
-    margin-top: 4px;
-    font-size: 13px;
+    margin-top: 6px;
+    font-size: 16px;
 }
 
 /* MOBILE */

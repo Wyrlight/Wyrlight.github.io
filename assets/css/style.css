@@ -118,17 +118,34 @@ main {
 }
 
 .info-title {
-    font-size: 26px;
+
+    font-size: 40px;
     font-weight: 600;
-    margin-bottom: 24px;
+
+    text-align: center;
+
+    margin-bottom: 36px;
+
 }
 
-.info-text {
+.info-qna h2 {
+
+    font-size: 28px;
+    font-weight: 600;
+
+    margin: 34px 0 12px;
+
+}
+
+.info-qna p {
+
     font-size: 22px;
     font-weight: 500;
+
     line-height: 1.6;
-    max-width: 860px;
-    margin: 0 auto 45px auto;
+
+    margin-bottom: 24px;
+
 }
 
 /* PORTFOLIO */

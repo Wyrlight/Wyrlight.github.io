@@ -20,10 +20,15 @@
     <!-- PINTEREST -->
     <meta name="p:domain_verify" content="944cbb497ef9617ee5739a7b83c9f290"/>
 
-    <!-- FAVICON -->
-    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon/favicon.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon/favicon-48x48.png">
-    <link rel="apple-touch-icon" href="assets/img/favicon/favicon.png">
+	<!-- 1. Kaasaegsed brauserid valivad selle (lõpmatu kvaliteet, pisike failimaht) -->
+	<link rel="icon" type="image/svg+xml" href="assets/img/favicon/favicon.svg">
+
+	<!-- 2. Tagavara (Fallback) vanematele brauseritele, mis SVG-d ei toeta -->
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon/favicon-48x48.png">
+
+	<!-- 3. Apple seadmete jaoks (kuna iOS ei pruugi SVG-d koduekraanile salvestamisel alati ideaalselt toetada) -->
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
     
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">

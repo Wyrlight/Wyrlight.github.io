@@ -21,8 +21,9 @@ Wyrlight focuses on clean visual design, SVG-based workflows and carefully craft
 
 ## External Presence
 
-* [Portfolio](https://sites.google.com/view/wyrlight-portfolio/home/): Extended visual portfolio.
+* [Portfolio](https://wyrlight.com/Portfolio/): Official portfolio showcasing original vector graphics and graphic artwork.
 * [GitHub](https://github.com/Wyrlight/Wyrlight): Public project repository and documentation.
+* [CodePen](https://codepen.io/WyrlightStudio): Front-end experiments, code snippets and web development demos.
 
 ## Permissions
 

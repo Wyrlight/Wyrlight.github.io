@@ -1,4 +1,7 @@
 User-agent: *
+
 Allow: /
 
 Sitemap: https://wyrlight.com/sitemap.xml
+
+Sitemap: https://wyrlight.com/portfolio/sitemap.xml
